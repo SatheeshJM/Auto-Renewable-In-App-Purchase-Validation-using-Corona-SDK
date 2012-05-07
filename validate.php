@@ -23,6 +23,11 @@ array(
 );
 
 
+// If Json is not installed in your server, You can comment out the lines which use json_encode and 
+// include the following lines instead
+// $postData = '{"receipt-data":"'.$hex.'","password":"'.$password.'"}';
+
+
 function do_post_request($url, $data, $optional_headers = null)
 {
   $params = array('http' => array(
